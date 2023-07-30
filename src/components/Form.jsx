@@ -19,7 +19,9 @@ function Form() {
 
   return (
     <div className="form">
-      <div className="progressbar"></div>
+      <div className="progressbar">
+        <div></div>
+      </div>
       <div className="form-container">
         <div className="header">
           <h1>{FormTitles[page]}</h1>

@@ -11,7 +11,10 @@
   height: 100vh;
   font-family: Montserrat, arial, Verdana, sans-serif;
   color: #0F0F0F;
-  background-color: #454ADE;
+  /* background-color: #454ADE; */
+
+  background: rgb(69,74,222);
+  background: radial-gradient(circle, rgba(69,74,222,1) 35%, rgba(43,46,140,1) 60%, rgba(2,2,9,1) 100%);
 
   display: grid;
   place-items: center;
@@ -54,6 +57,27 @@
   justify-content: center;
 }
 
+.form-container .footer button {
+  /* border-radius: 7px; */
+  text-transform: uppercase;
+  width: 100px;
+  height: 40px;
+  /* background-color: #A63A50; */
+  /* ten ok: */
+  /* background-color: #454ADE; */
+
+  background-color: #2b2e8c;
+
+  /* font-weight: bold; */
+  color: #E8F7EE;
+  border: 0 none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  margin: 5px;
+}
+
 .sign-up-container,
 .personal-info-container,
 .other-info-container {
@@ -79,9 +103,26 @@ input {
   border: 2px solid #454ADE;
   /* border: 2px solid #A63A50; */
   border-radius: 5px;
+  cursor: pointer;
 }
 
 input:focus {
   border: 3px solid #454ADE;
+}
+
+/* PROGRESS BAR */
+.progressbar {
+  width: 50%;
+  height: 10px;
+  background-color: #E8F7EE;
+  margin-bottom: 50px;
+}
+
+.progressbar div {
+  width: 33.3%;
+  height: 100%;
+  /* background-color: #454ADE; */
+  /* background-color: #DA9F93; */
+  background-color: #ff0998;
 }
 
