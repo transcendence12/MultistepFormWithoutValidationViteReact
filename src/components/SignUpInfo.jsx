@@ -2,7 +2,11 @@
 
 const SignUpInfo = () => {
   return (
-    <div>SignUpInfo</div>
+    <div className="sign-up-container">
+      <input type="email" placeholder="Email..." />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Confirm password" />
+    </div>
   )
 }
 

@@ -2,7 +2,11 @@
 
 const PersonalInfo = () => {
   return (
-    <div>PersonalInfo</div>
+    <div className="personal-info-container">
+      <input type="text" placeholder="First name..."/>
+      <input type="text" placeholder="Last name..."/>
+      <input type="text" placeholder="Username..."/>
+    </div>
   )
 }
 
