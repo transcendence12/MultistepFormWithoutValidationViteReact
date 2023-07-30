@@ -5,15 +5,26 @@ import OtherInfo from "./OtherInfo";
 
 function Form() {
   const [page, setPage] = useState(0);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+    firstName: "",
+    lastName: "",
+    username: "",
+    nationality: "",
+    other: ""
+  });
+
   const FormTitles = ["Sign Up", "Personal Info", "Other"];
 
   const pageDisplay = () => {
     if(page === 0){
-      return <SignUpInfo />
+      return <SignUpInfo formData={formData} setFormData={setFormData} />
     } else if(page === 1){
-      return <PersonalInfo />
+      return <PersonalInfo formData={formData} setFormData={setFormData} />
     } else {
-      return <OtherInfo />
+      return <OtherInfo formData={formData} setFormData={setFormData} />
     }
   }
 
