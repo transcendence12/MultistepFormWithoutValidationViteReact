@@ -1,19 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#root {
-  max-width: 1280px;
+.App {
+  width: 100vw;
   height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: lightskyblue;
+  font-family: Montserrat, arial, Verdana, sans-serif;
+  color: #0F0F0F;
+  background-color: #454ADE;
+
+  display: grid;
+  place-items: center;
 }
-h1 {
-  color: red;
-  
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 50%;
+  height: 50%;
+  background-color: #E8F7EE;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .header {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+
+.form-container .body {
+  flex: 60%;
+  /* display: grid;
+  place-items: center; */
+}
+
+.form-container .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-container,
+.personal-info-container,
+.other-info-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container input,
+.personal-info-container input,
+.other-info-container input {
+  margin: 5px;
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+input {
+  border: 2px solid #454ADE;
+  /* border: 2px solid #A63A50; */
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 3px solid #454ADE;
 }
 
