@@ -48,12 +48,17 @@ function Form() {
             Prev
           </button>
           <button
-            disabled={page == FormTitles.length - 1}
             onClick={() => {
-              setPage((currentPage) => currentPage + 1);
+              if(page == FormTitles.length - 1) {
+                // send data to the api au lieu faire un alert
+                alert("Form submitted!")
+                console.log(formData)
+              } else {
+                setPage((currentPage) => currentPage + 1)
+              }
             }}
           >
-            Next
+            {page === FormTitles.length - 1 ? "Submit" : "Next"}
           </button>
         </div>
       </div>
