@@ -50,7 +50,7 @@ function Form() {
           <button
             onClick={() => {
               if(page == FormTitles.length - 1) {
-                // send data to the api au lieu faire un alert
+                // send data to the api au lieu de faire un alert
                 alert("Form submitted!")
                 console.log(formData)
               } else {
